@@ -1,10 +1,9 @@
-﻿using System;
-
+﻿
 namespace CalculatorApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Welcome to the Calculator App!");
 
@@ -15,7 +14,7 @@ namespace CalculatorApp
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.Write("Enter the operator (+, -, *, /): ");
-                char op = Convert.ToChar(Console.ReadLine());
+                char op = Convert.ToChar(Console.ReadLine() ?? throw new InvalidOperationException());
 
                 Console.Write("Enter the second number: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());

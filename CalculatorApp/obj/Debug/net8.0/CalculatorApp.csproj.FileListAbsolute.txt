@@ -20,3 +20,4 @@ C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Debug\net8.0\refint
 C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Debug\net8.0\CalculatorApp.pdb
 C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Debug\net8.0\CalculatorApp.genruntimeconfig.cache
 C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Debug\net8.0\ref\CalculatorApp.dll
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Debug\net8.0\CalculatorApp.sourcelink.json

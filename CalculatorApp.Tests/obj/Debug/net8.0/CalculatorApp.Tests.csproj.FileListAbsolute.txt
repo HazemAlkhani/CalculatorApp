@@ -109,3 +109,4 @@ C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp.Tests\obj\Debug\net8.0\
 C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp.Tests\obj\Debug\net8.0\CalculatorApp.Tests.pdb
 C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp.Tests\obj\Debug\net8.0\CalculatorApp.Tests.genruntimeconfig.cache
 C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp.Tests\obj\Debug\net8.0\ref\CalculatorApp.Tests.dll
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp.Tests\obj\Debug\net8.0\CalculatorApp.Tests.sourcelink.json

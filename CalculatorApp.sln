@@ -4,6 +4,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorApp", "Calculator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorApp.Tests", "CalculatorApp.Tests\CalculatorApp.Tests.csproj", "{AABC79C3-12B4-4E65-9AC6-01363CE3BEF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculator", "Calculator", "{21A92AD7-C215-40A1-81E0-AABAD7E6A6A7}"
+	ProjectSection(SolutionItems) = preProject
+		.drone.yml = .drone.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +23,9 @@ Global
 		{AABC79C3-12B4-4E65-9AC6-01363CE3BEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABC79C3-12B4-4E65-9AC6-01363CE3BEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABC79C3-12B4-4E65-9AC6-01363CE3BEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB76A7E1-F250-474F-97D7-423B595BFF60} = {21A92AD7-C215-40A1-81E0-AABAD7E6A6A7}
+		{AABC79C3-12B4-4E65-9AC6-01363CE3BEF9} = {21A92AD7-C215-40A1-81E0-AABAD7E6A6A7}
 	EndGlobalSection
 EndGlobal

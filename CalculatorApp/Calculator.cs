@@ -15,21 +15,21 @@ namespace CalculatorApp
         public double Add(double n1, double n2)
         {
             double result = n1 + n2;
-            LogOperation(n1, n2, "+", result); // Pass the result parameter
+            LogOperation(n1, n2, "+", result); 
             return result;
         }
 
         public double Subtract(double n1, double n2)
         {
             double result = n1 - n2;
-            LogOperation(n1, n2, "-", result); // Pass the result parameter
+            LogOperation(n1, n2, "-", result); 
             return result;
         }
 
         public double Multiply(double n1, double n2)
         {
             double result = n1 * n2;
-            LogOperation(n1, n2, "*", result); // Pass the result parameter
+            LogOperation(n1, n2, "*", result); 
             return result;
         }
 
@@ -39,7 +39,7 @@ namespace CalculatorApp
                 throw new DivideByZeroException("Cannot divide by zero.");
 
             double result = n1 / n2;
-            LogOperation(n1, n2, "/", result); // Pass the result parameter
+            LogOperation(n1, n2, "/", result); 
             return result;
         }
 

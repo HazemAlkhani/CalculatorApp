@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using CalculatorApp;
+
 namespace CalculatorApp
 {
     class Program
@@ -7,6 +9,13 @@ namespace CalculatorApp
         {
             Console.WriteLine("Welcome to the Calculator App!");
 
+            // Create an instance of DatabaseService (implementing IDatabaseService)
+            string connectionString = "Server=ASUS-ROG,1433;Database=CalculatorDB;User Id=sa;Password=700170;";
+            IDatabaseService databaseService = new DatabaseService(connectionString);
+            Calculator calculator = new Calculator(databaseService);
+            // Pass the databaseService to the Calculator
+            calculator = new Calculator(databaseService);
+
             try
             {
                 // Prompt the user for input
@@ -14,7 +23,7 @@ namespace CalculatorApp
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.Write("Enter the operator (+, -, *, /): ");
-                char op = Convert.ToChar(Console.ReadLine() ?? throw new InvalidOperationException());
+                char op = Convert.ToChar(Console.ReadLine() ?? throw new InvalidOperationException("Invalid operation."));
 
                 Console.Write("Enter the second number: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());
@@ -22,7 +31,6 @@ namespace CalculatorApp
                 double result = 0;
 
                 // Perform calculations based on the operator
-                Calculator calculator = new Calculator("Server=ASUS-ROG,1433;Database=CalculatorDB;User Id=sa;Password=700170;");
                 switch (op)
                 {
                     case '+':
@@ -42,13 +50,10 @@ namespace CalculatorApp
                         break;
                     default:
                         Console.WriteLine("Invalid operator entered.");
-                        break;
+                        return; // Exit if invalid operator to avoid logging
                 }
 
                 Console.WriteLine($"Result of {num1} {op} {num2} = {result}");
-
-                // Log the operation
-                calculator.LogOperation(num1, num2, op.ToString(), result);
             }
             catch (FormatException)
             {

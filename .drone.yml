@@ -15,8 +15,8 @@ steps:
     commands:
       - dotnet sonarscanner begin /k:"easv-devops_CalculatorApp_AY4IVCA9EVvRW2O60ES7" /d:sonar.host.url="http://sonar.setgo.dk:9000" /d:sonar.token="sqp_e3f74eb9afbc43b08266f8489417813c52bbda82"
 
-  - name: rebuild_and_sonarqube_end
+  - name: sonarqube_end
     image: mcr.microsoft.com/dotnet/sdk:8.0
     commands:
-      - MsBuild.exe /t:Rebuild
+      - dotnet build --configuration Release
       - dotnet sonarscanner end /d:sonar.login="sqp_e3f74eb9afbc43b08266f8489417813c52bbda82"

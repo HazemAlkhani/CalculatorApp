@@ -2,5 +2,5 @@ projectKey=easv-devops_CalculatorApp_AY4IVCA9EVvRW2O60ES7
 serverUrl=http://sonar.setgo.dk:9000
 serverVersion=10.3.0.82913
 dashboardUrl=http://sonar.setgo.dk:9000/dashboard?id=easv-devops_CalculatorApp_AY4IVCA9EVvRW2O60ES7
-ceTaskId=AY4MS-C9EVvRW2O60ETw
-ceTaskUrl=http://sonar.setgo.dk:9000/api/ce/task?id=AY4MS-C9EVvRW2O60ETw
+ceTaskId=AY4MjUNuEVvRW2O60ETx
+ceTaskUrl=http://sonar.setgo.dk:9000/api/ce/task?id=AY4MjUNuEVvRW2O60ETx

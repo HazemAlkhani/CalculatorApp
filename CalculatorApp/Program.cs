@@ -1,7 +1,4 @@
-﻿using System;
-using CalculatorApp;
-
-namespace CalculatorApp
+﻿namespace CalculatorApp
 {
     class Program
     {
@@ -9,16 +6,16 @@ namespace CalculatorApp
         {
             Console.WriteLine("Welcome to the Calculator App!");
 
-            // Create an instance of DatabaseService (implementing IDatabaseService)
+           
             string connectionString = "Server=ASUS-ROG,1433;Database=CalculatorDB;User Id=sa;Password=700170;";
             IDatabaseService databaseService = new DatabaseService(connectionString);
             Calculator calculator = new Calculator(databaseService);
-            // Pass the databaseService to the Calculator
+           
             calculator = new Calculator(databaseService);
 
             try
             {
-                // Prompt the user for input
+                
                 Console.Write("Enter the first number: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
@@ -30,7 +27,7 @@ namespace CalculatorApp
 
                 double result = 0;
 
-                // Perform calculations based on the operator
+              
                 switch (op)
                 {
                     case '+':
@@ -50,7 +47,7 @@ namespace CalculatorApp
                         break;
                     default:
                         Console.WriteLine("Invalid operator entered.");
-                        return; // Exit if invalid operator to avoid logging
+                        return; 
                 }
 
                 Console.WriteLine($"Result of {num1} {op} {num2} = {result}");

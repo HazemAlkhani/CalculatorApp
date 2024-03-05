@@ -1,9 +1,4 @@
-﻿
-using System.Data.SqlClient;
-
-using System;
-
-namespace CalculatorApp
+﻿namespace CalculatorApp
 {
     public class Calculator : ICalculator
     {

@@ -7,7 +7,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculator", "Calculator", "{21A92AD7-C215-40A1-81E0-AABAD7E6A6A7}"
 	ProjectSection(SolutionItems) = preProject
 		.drone.yml = .drone.yml
-		Sonar.sh = Sonar.sh
 	EndProjectSection
 EndProject
 Global

@@ -1,0 +1,9 @@
+O
+FC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\Calculator.csutf-8T
+KC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\DatabaseService.csutf-8P
+GC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\ICalculator.csutf-8U
+LC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\IDatabaseService.csutf-8L
+CC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\Program.csutf-8v
+kC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Release\net8.0\CalculatorApp.GlobalUsings.g.csutf-8…
+zC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Release\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8t
+iC:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\obj\Release\net8.0\CalculatorApp.AssemblyInfo.csutf-8

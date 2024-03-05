@@ -1,0 +1,9 @@
+﻿C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\Calculator.cs
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\DatabaseService.cs
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\ICalculator.cs
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\IDatabaseService.cs
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\Program.cs
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\.dockerignore
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\appsettings.json
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\docker-compose.yml
+C:\Users\hazem\RiderProjects\CalculatorApp\CalculatorApp\Dockerfile

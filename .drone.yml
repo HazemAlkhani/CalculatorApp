@@ -3,21 +3,19 @@ type: docker
 name: default
 
 steps:
-  - name: build
-    image: mcr.microsoft.com/dotnet/sdk:8.0
+  - name: build-and-test
+    image: boulundeasv/dotnet-sdk-with-java 
     commands:
       - dotnet restore
       - dotnet build --configuration Release
       - dotnet test --configuration Release --no-build --collect:"XPlat Code Coverage"
       - dotnet tool install --global dotnet-reportgenerator-globaltool
-      - reportgenerator -reports:./**/coverage.cobertura.xml -targetdir:coveragereport -reporttypes:Html
+      - /root/.dotnet/tools/reportgenerator -reports:./**/coverage.cobertura.xml -targetdir:coveragereport -reporttypes:Html
 
   - name: code-analysis
     image: boulundeasv/dotnet-sdk-with-java
-    environment:
-      SONARSECRET:
-        from_secret: SonarQubeSecret
     commands:
-      - dotnet sonarscanner begin /k:"easv-devops_ClassDemo_AY1p6I-NEVvRW2O60D3F" /d:sonar.host.url="http://sonar.setgo.dk:9000" /d:sonar.login="$SONARSECRET" /d:sonar.cs.vscoveragexml.reportsPaths=**/coveragereport/coverage.xml /d:sonar.qualitygate.wait=true
+      - /root/.dotnet/tools/reportgenerator -reports:./**/coverage.cobertura.xml -targetdir:coveragereport -reporttypes:Html
+      - sonarscanner begin /k:"easv-devops_CalculatorApp_AY4IVCA9EVvRW2O60ES7" /d:sonar.host.url="http://sonar.setgo.dk:9000" /d:sonar.login="sqp_e3f74eb9afbc43b08266f8489417813c52bbda82"
       - dotnet build --configuration Release
-      - dotnet sonarscanner end /d:sonar.login="$SONARSECRET"
+      - sonarscanner end /d:sonar.login="sqp_e3f74eb9afbc43b08266f8489417813c52bbda82"
